@@ -2,27 +2,31 @@
 import java.util.Scanner;
 public class Task1 {
     //Конструктор класса
+    int n;
 
     public Task1() {
-        System.out.println("Введите натуральное число n !");
+        System.out.println("Введите натуральное число n ");
 
         Scanner input = new Scanner(System.in);
-        int n = Integer.parseInt(input.next());
+        n = input.nextInt();
         input.close();
+    }
 
-        public void getTriangle() {
-            int triangle = (n * (n + 1) / 2);
+    public void getTriangle() {
+        int triangle = (n * (n + 1) / 2);
 
-        }
 
         System.out.println("Треугольное число равно " + triangle);
 
-        public void getFactorial () {
-            int factorial = 1;
-            for  (int i = 1; i < (n+1) ; i++);
-            factorial = factorial*i;
+    }
 
+    public void getFactorial() {
+        int factorial = 1;
+        for (int i = 1; i < (n + 1); i++) {
+        factorial = factorial * i;
         }
 
-        System.out.println ("Факториал числа введенного числа равен " + factorial);
-    };
+
+        System.out.println("Факториал числа введенного числа равен " + factorial);
+    }
+}
